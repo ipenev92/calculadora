@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Calculadora</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="Style/style.css">
+	<script src="Javascript/calculadora.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  			integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  			crossorigin="anonymous"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="media/icon.png">
+</head>
+<body>
+
+	<form>
+		<input type="radio" name="type" value="standard" checked>Standard</input>
+		<br>
+		<input type="radio" name="type" value="scientific">Scientific</input>
+		<br>
+		<input type="radio" name="type" value="date">Date Calculation</input>
+	</form>
+
+	<div id="output">
+		<span id="output_all"></span><br>
+		<span id="output_current"></span><br>
+	</div>
+	<div id="standard">
+		<div id="st_first_row">
+			<button class="multi"  value="percent">%</button>
+			<button class="single" value="squareRoot">&#8730;</button>
+			<button class="single" value="exp2">x<sup>2</sup></button>
+			<button class="single" value="divideOne">1/x</button>
+		</div>
+		<div id="st_second_row">
+			<button class="deletion" value="deleteCurrent">CE</button>
+			<button class="deletion" value="deleteAll">C</button>
+			<button class="deletion" value="deleteLast">&#9003;</button>
+			<button class="multi"    value="divide">÷</button>
+		</div>
+		<div id="st_third_row">
+			<button class="button" value="7">7</button>
+			<button class="button" value="8">8</button>
+			<button class="button" value="9">9</button>
+			<button class="multi"  value="multiply">×</button>
+		</div>
+		<div id="st_fourth_row">
+			<button class="button" value="4">4</button>
+			<button class="button" value="5">5</button>
+			<button class="button" value="6">6</button>
+			<button class="multi"  value="subtract">-</button>
+		</div>
+		<div id="st_fifth_row">
+			<button class="button" value="1">1</button>
+			<button class="button" value="2">2</button>
+			<button class="button" value="3">3</button>
+			<button class="multi"  value="sum">+</button>
+		</div>
+		<div id="st_sixth_row">
+			<button class="single" value="posNeg">+-</button>
+			<button class="button" value="0">0</button>
+			<button class="button" value=".">.</button>
+			<button id="equal">=</button>
+		</div>
+	</div>
+
+	<div id="scientific">
+		<div id="sci_first_row">
+			<button class="single" value="exp2">x<sup>2</sup></button>
+			<button class="multi"  value="expY">x<sup>y</sup></button>
+			<button class="single" value="sin">sin</button>
+			<button class="single" value="cos">cos</button>
+			<button class="single" value="tan">tan</button>
+		</div>
+		<div id="sci_second_row">
+			<button class="single" value="squareRoot">&#8730;</button>
+			<button class="single" value="tenX">10<sup>x</sup></button>
+			<button>log</button>
+			<button>Exp</button>
+			<button class="multi"  value="module">Mod</button>
+		</div>
+		<div id="sci_third_row">
+			<button class="single" value="divideOne">1/x</button>
+			<button class="deletion" value="deleteCurrent">CE</button>
+			<button class="deletion" value="deleteAll">C</button>
+			<button class="deletion" value="deleteLast">&#9003;</button>
+			<button class="multi"    value="divide">÷</button>
+		</div>
+		<div id="sci_fourth_row">
+			<button id="pi">π</button>
+			<button class="button" value="7">7</button>
+			<button class="button" value="8">8</button>
+			<button class="button" value="9">9</button>
+			<button class="multi"  value="multiply">×</button>
+		</div>
+		<div id="sci_fifth_row">
+			<button class="single" value="factorial">n!</button>
+			<button class="button" value="4">4</button>
+			<button class="button" value="5">5</button>
+			<button class="button" value="6">6</button>
+			<button class="multi"  value="subtract">-</button>
+		</div>
+		<div id="sci_sixth_row">
+			<button class="single" value="posNeg">+-</button>
+			<button class="button" value="1">1</button>
+			<button class="button" value="2">2</button>
+			<button class="button" value="3">3</button>
+			<button class="multi"  value="sum">+</button>
+		</div>
+		<div id="sci_seventh_row">
+			<button id="left_bracket">(</button>
+			<button id="right_bracket">)</button>
+			<button class="button" value="0">0</button>
+			<button class="button" value=".">.</button>
+			<button id="equal_sc">=</button>
+		</div>
+	</div>
+
+	yes yes no no no
+	yes yes no no yes
+	yes yes yes yes yes
+	yes yes yes yes yes
+	yes yes yes yes yes
+	yes yes yes yes yes
+	no no yes yes yes
+</body>
+</html>
